@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="generator" content="Responsive Site Designer 1.5.1390">
+  <title>Index</title>
+  <link rel="stylesheet" href="css/coffeegrinder.min.css">
+  <link rel="stylesheet" href="css/wireframe-theme.min.css">
+  <script>document.createElement( "picture" );</script>
+  <script src="js/picturefill.min.js" class="picturefill" async="async"></script>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,b">
+<!-- SMOOTH SCROLL -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+<!-- End of SMOOTH SCROLL -->
+</head>
+
+<body class="grid-1">
+  <nav class="row nav-row">
+    <div class="coffee-span-12 nav-col">
+      <a class="link-text nav-item" href="#index">Home</a>
+      <a class="link-text nav-item" href="#portfolio">Sign up for new card</a>
+      <a class="link-text nav-item" href="#about">About</a>
+      <a class="link-text nav-item" href="#contact">Contact</a>
+    </div>
+  </nav>
+  <header class="row header" id="index">
+    <div class="coffee-span-12 logo-col">
+      <div class="responsive-picture logo">
+	  <div class="coffee-span-5 text-col contact coffee-800-span-12 coffee-offset-2">
+      <h2>Global Issuance Demo</h2>
+    </div>
+	
+      </div>
+    </div>
+  </header>
+  <div class="row portfolio-row" id="portfolio">
+  
+
+	    <div class="coffee-span-5 coffee-800-span-9 coffee-450-span-12 coffee-offset-2 coffee-800-offset-0 text-col">
+	   <h2>New Card Application</h2>
+      <p class="paragraph">Please fill in all fields. </p>
+   
+<form method="post" enctype="application/x-www-form-urlencoded" action="http://localhost:8080/cards">
+<p class="paragraph"> Card Required:
+<select name="CardType">
+  <option selected value="Everyday Card">Every Day Card</option>
+  <option value="Midrange Card">Mid Range Card</option>
+  <option value="High End Card">High End Card</option>
+</select>
+</P>
+<p class="paragraph"> First Name:
+</br>
+<input type="text" name="firstName" value=""> </p>
+<p class="paragraph"> Second Name:
+</br>
+<input type="text" name="secondName" value="">
+ </p>
+<p class="paragraph"> Employee Name:
+</br><input type="text" name="employeeName" value=""> </p>
+<p class="paragraph"> Income:
+</br><input type="text" name="Income" value=""> </p>
+<p class="paragraph"> <input type="submit" name="submit" value="submit"> </p>
+</form>
+   </div> 
+
+  </div>
+ 
+ 
+  </div>
+  <div class="row about" id="about">
+  	  
+	   <div class="coffee-span-6 portfolio-cover sky coffee-450-span-12">
+	   <a class="link-button portfolio-link" href=""></a>
+    </div>
+	  
+    <div class="coffee-span-5 coffee-800-span-9 coffee-450-span-12 coffee-offset-2 coffee-800-offset-0 text-col">
+	   <h2>Andre Simmons</h2>
+      <p class="paragraph">How would any of us describe ourselves if we were to look in the mirror and be honest with the world. My 
+	  favorite film sums it up: "You see us as you want to see us—in the simplest terms, in the most convenient definitions. But what we found out is that each one of us is a brain...and an athlete...and a basket case...a princess...and a criminal. Does that answer your question?"</p>
+    </div>   
+    </div>
+   
+  </div>
+  <div class="row contact" id="contact">
+    <div class="coffee-span-5 text-col contact coffee-800-span-12 coffee-offset-2">
+      <h2>Contact</h2>
+    </div>
+    <div class="coffee-span-5 text-col contact coffee-offset-0 coffee-800-span-12">
+      <span class="text-element contact-text">To</span>
+      <span class="text-element contact-text light">Andre Simmons</span>
+      <span class="text-element contact-text">From</span><input value="" name="email-name" type="email" class="email-field">
+      <span class="text-element contact-text">Your message</span><textarea name="textarea-name" class="textarea"></textarea><button type="submit" class="contact-bt">Send email</button>
+    </div>
+  </div>
+  <footer class="row footer">
+    <div class="coffee-span-12">
+      <p class="paragraph copyright">Hope you enjoyed the demo</a>
+      </p>
+    </div>
+  </footer>
+<script>
+if(navigator.userAgent.match(/Trident\/7\./)) {
+  document.body.addEventListener("mousewheel", function() {
+    event.preventDefault();
+    var wd = event.wheelDelta;
+    var csp = window.pageYOffset;
+    window.scrollTo(0, csp - wd);
+  });
+}
+</script>
+</body>
+
+</html>
